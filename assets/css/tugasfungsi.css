@@ -1,0 +1,33 @@
+.tugasfungsi {
+	padding: 20px;
+}
+	.tugasfungsi .box-tugasfungsi {
+		padding: 10px 20px;
+		border: 1px solid #888;
+		border-radius: 50px 15px;
+		box-shadow: 1px 2px 2px #888;
+		background-color: #f9f9f9;
+	}
+	.box-tugasfungsi a {
+		color: #0044CC;
+		font-weight: bold;
+	}
+	.box-tugasfungsi a:hover {
+		color: blue;
+		text-decoration: underline;
+	}
+
+#navigation .pagination {
+	margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+	.box-visi h3, .box-misi h3 {
+		position: absolute;
+		top: -35px;
+		left: 25%;
+		width: 150px;
+		padding: 5px;
+		border-radius: 3px;
+	}
+}

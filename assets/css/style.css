@@ -1,0 +1,513 @@
+body {
+    background-color: #fafafa;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+/* HEADER */
+#marquee {
+    background-color: #2E8B57; /* Sea Green */
+    color: #f9f9f9;
+}
+    #marquee img {
+        margin-top: -3px;
+        margin-right: 5px;
+    }
+
+#header .container {
+    padding: 20px;
+    position: relative;
+}
+    #header #banner {
+        content: "";
+        background-image: url('../../image/banner.jpg');
+        background-repeat: no-repeat;
+        opacity: .4;
+        top: -30px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+#header .brand {
+    float: left;
+}
+    #header .brand img {
+        float: left;
+        width: 92px;
+        margin-right: 10px;
+    }
+    #header h3 {
+        margin: 0;
+        padding-top: 25px;
+        font-size: 12px;
+        font-weight: 800;
+        float: right;
+        color: rgb(24,24,24);
+    }
+
+#searching {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+    ul.sosmed-header {
+        margin: 0;
+        padding: 0;
+    }
+        ul.sosmed-header li {
+            display: inline-block !important;
+        }
+        ul.sosmed-header li a {
+            font-size: 2em;
+        }
+        ul.sosmed-header li a:hover i.fb {
+            color: #0000FF; /* Deep Sky Blue */
+        }
+        ul.sosmed-header li a i.tw {
+            color: #1DA1F2; /* twitter */
+        }
+        ul.sosmed-header li a:hover i.tw {
+            color: #00BFFF; /* Deep Sky Blue */
+        }
+/* END HEADER */
+
+/* HR */
+hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+hr.separator {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: 1px solid #999;
+}
+
+hr.judul {
+    width: 100%;
+    border-top: 2px solid #999;
+    box-shadow: 1px 1px 3px lightblue;
+}
+
+hr.subjudul {
+    margin-top: 10px;
+    width: 40%;
+    border-top: 2px solid #004445;
+    box-shadow: 2px 2px 4px #888;
+}
+/* END HR */
+
+.caret.rotate270 {
+	float: right;
+    margin-top: 5px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+/* owl-carousel */
+.owl-carousel-1 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+    .owl-carousel-1 .box-overlay {
+        width: 220px;
+        height: 200px;
+        padding: 3px;
+        border: 1px solid #ccc;
+        position: relative;
+    }
+    .box-overlay:hover {
+        border: 1px solid #555;
+    }
+    .box-overlay:hover .overlay {
+        opacity: 1;
+    }
+    .box-overlay .overlay {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        opacity: 0;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        position: absolute;
+        text-align: center;
+        background: rgba(0, 0, 0, .6);
+    }
+    .overlay .keterangan {
+        top: 40%;
+        position: relative;
+        color: #f5f5f5;
+        text-align: center;
+    }
+    .owl-carousel-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+/* end owl-carousel */
+
+/* MAIN MENU */
+nav.mainmenu {
+	margin: 0;
+	border: 0;
+	border-radius: 0;
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0;
+    border: 0px !important;
+}
+    nav.mainmenu .navbar-nav > li > a {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    nav.mainmenu .dropdown-menu {
+        padding: 0px 0; 
+        margin: 0; 
+        border: 0px solid transition !important 1s;
+    	border: 0px solid rgba(0,0,0,.15);
+    	border-radius: 0px;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    nav.mainmenu .navbar-nav .open .dropdown-menu > li > a { padding: 16px 15px 16px 25px; }
+.header_bottom { background-color: #2E8B57; /* Sea Green */ }
+.header_area .header_bottom .mainmenu a , nav.navbar-default.mainmenu .navbar-nav > li > a {
+    color: #FFD700; /* Gold */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-transform: capitalize;
+    padding: 16px 15px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header_area .mainmenu .active a, 
+.header_area .mainmenu .active a:focus, 
+.header_area .mainmenu .active a:hover, 
+.header_area .mainmenu li a:hover, 
+.header_area .mainmenu li a:focus, 
+nav.navbar-default.mainmenu .navbar-nav > .open > a, nav.navbar-default.mainmenu .navbar-nav > .open > a:focus, nav.navbar-default.mainmenu .navbar-nav > .open > a:hover {
+    color: #90EE90; /* Light Green */
+    background-color: #006400; /* Dark Green */
+    outline: 0;
+}
+/*-----./ Main Menu-----*/
+
+nav.navbar-default.mainmenu .navbar-toggle { border-color: #fff; } /*Toggle Button*/
+nav.navbar-default.mainmenu .navbar-toggle .icon-bar { background-color: #fff; } /*Toggle Button*/
+
+/*==========Sub Menu=v==========*/
+nav.mainmenu .collapse ul > li:hover > a { background-color: #006400; /* Dark Green */ }
+nav.mainmenu .collapse ul ul > li:hover > a, 
+nav.navbar-default.mainmenu .navbar-nav .open .dropdown-menu > li > a:focus, 
+nav.navbar-default.mainmenu .navbar-nav .open .dropdown-menu > li > a:hover { background-color: #006400; /* Dark Green */ }
+nav.mainmenu .collapse ul ul ul > li:hover > a { background-color: #006400; /* Dark Green */ }
+
+nav.mainmenu .collapse ul ul, .mainmenu .collapse ul ul.dropdown-menu { border-top: 3px solid #3CB371; background-color: #006400; /* Dark Green */ }
+.mainmenu .collapse ul ul ul, .mainmenu .collapse ul ul ul.dropdown-menu { border-top: 0; border-left: 3px solid #3CB371; background-color: #006400; /* Dark Green */ }
+
+nav.mainmenu .collapse ul ul.dropdown-menu li a, 
+nav.mainmenu .collapse ul ul ul.dropdown-menu li a { font-size: 12px; text-transform: uppercase; }
+
+/******************************Drop-down menu work on hover**********************************/
+nav.mainmenu { background:none; border:0 solid; margin:0; padding:0; min-height:20px; }
+/* END MAIN MENU */
+
+/* MENU BERITA */
+/*.menu-berita {
+    margin: 0;
+    min-height: 25px;
+    background-color: blue;
+}*/
+/* END MENU BERITA */
+
+/* CONTENT */
+div#content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 250px;
+    /*background-color: #f9f9f9;*/
+}
+
+/* CAROUSEL */
+.carousel .carousel-inner .item .img-carousel {
+    width: 100%;
+    height: 520px;
+}
+
+section.konten {
+    padding: 15px;
+    box-shadow: 1px 2px 2px #888;
+    background-color: #fff;
+}
+    section.sejarah img {
+        margin-right: 10px;
+        float: left;
+    }
+    section.direktori ul li a {
+        color: inherit;
+    }
+    section.direktori ul li a:hover {
+        text-decoration: underline;
+        color: #0044CC;
+    }
+
+.side-kanan {
+    margin: 0 0 20px 0;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px #888;
+    background-color: #f9f9f9;
+}
+    .side-kanan h4.panel {
+        margin: 0;
+        padding: 10px;
+        border-radius: 5px 5px 1px 1px;
+        /*background: linear-gradient(#2E8B57, #3CB371, #2E8B57);
+        background: -webkit-linear-gradient(#2E8B57, #3CB371, #2E8B57);
+        background: -moz-linear-gradient(#2E8B57, #3CB371, #2E8B57);
+        background: -o-linear-gradient(#2E8B57, #3CB371, #2E8B57);*/
+        background: brown;
+        font-weight: bold;
+        color: rgb(240,240,240);
+    }
+    .side-kanan #dp-kalender {
+        padding: 15px;
+    }
+        #dp-kalender {
+            margin: 0 auto;
+            width: 275px;
+        }
+        #dp-kalender #datepicker {
+            font-size: 12px;
+        }
+
+    .side-kanan ul#info {
+        padding: 15px;
+        list-style-type: none;
+    }
+        ul#info li a span {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        ul#info li a:hover {
+            text-decoration: underline;
+        }
+
+a.show-more {
+    margin: 0 0 10px 0;
+    width: 100%;
+    background-color: #7DA3A1;
+    transition: .5s;
+}
+    a.show-more:hover {
+        background-color: #7DA3A1;
+        border-color: #7DA3A1;
+        box-shadow: 1px 2px 3px #34675C;
+        color: #324851;
+    }
+/* END CONTENT */
+
+/* FOOTER */
+#myFooter {
+	/*background-color: #021C1E;*/
+    background: #1D282E;
+	color:white;
+}
+
+#myFooter .footer-copyright{
+	background: #222;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align: center;
+}
+
+#myFooter .footer-copyright p{
+	margin:10px;
+	color: #ccc;
+}
+
+#myFooter ul{
+	list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+}
+
+#myFooter h5{
+	font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+#myFooter a{
+	color:#d2d1d1;
+	text-decoration: none;
+}
+
+#myFooter a:hover, #myFooter a:focus{
+	text-decoration: none;
+	color:white;
+}
+
+#myFooter .myCols{
+	text-align: left;
+	margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#myFooter i.footer-kontak {
+    border: 1px solid #666;
+    margin-right: 10px;
+    padding: 10px;
+}
+    i.footer-kontak.location {
+        color: red;
+    }
+    i.footer-kontak.phone {
+        color: green;
+    }
+
+#myFooter .facebook, 
+#myFooter .google, 
+#myFooter .twitter {
+    text-transform: none;
+}
+
+#myFooter .facebook i, 
+#myFooter .google i, 
+#myFooter .twitter i {
+    margin-right: 5px;
+}
+
+#myFooter .facebook:hover{
+	color:#0077e2;
+    text-decoration: underline;
+}
+
+#myFooter .google:hover{
+	color:#ef1a1a;
+    text-decoration: underline;
+}
+
+#myFooter .twitter:hover{
+	color: #00aced;
+    text-decoration: underline;
+}
+
+#myFooter{
+	flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+}
+/* END FOOTER */
+
+@media only screen and (min-width: 767px) {
+	#myFooter {
+		text-align: center;
+	}
+
+	.navbar-default .navbar-nav > li.dropdown:hover > ul.dropdown-menu {
+    	display: block;
+    }
+
+    .mainmenu .collapse ul li{position:relative;}
+    .mainmenu .collapse ul li:hover> ul{display:block}
+    .mainmenu .collapse ul ul{position:absolute;top:100%;left:0;min-width:250px;display:none}
+    /*******/
+    .mainmenu .collapse ul ul li{position:relative}
+    .mainmenu .collapse ul ul li:hover> ul{display:block}
+    .mainmenu .collapse ul ul ul{position:absolute;top:0;left:100%;min-width:250px;display:none}
+    /*******/
+    .mainmenu .collapse ul ul ul li{position:relative}
+    .mainmenu .collapse ul ul ul li:hover ul{display:block}
+    .mainmenu .collapse ul ul ul ul{position:absolute;top:0;left:-100%;min-width:250px;display:none;z-index:1}
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    section.video h3, 
+    section.layanan-publik h3 {
+        font-size: 18px;
+    }
+    section.video video {
+        width: 240px;
+        height: 200px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    #header .brand img {
+        width: 48px;
+    }
+    #header h3 {
+        padding-top: 15px;
+        font-size: 8px;
+        font-weight: 800;
+    }
+    #header #searching {
+        display: none;
+    }
+
+    .side-kanan { margin-top: 15px; }
+
+    .carousel .carousel-inner .item .img-carousel {
+        width: 100%;
+        height: 320px;
+    }
+
+    #dp-kalender {
+        margin: 0 auto;
+        width: 200px;
+    }
+        #dp-kalender #datepicker {
+            font-size: 10px;
+        }
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

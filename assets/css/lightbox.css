@@ -1,0 +1,28 @@
+.btn-prev {
+	float: left;
+}
+.btn-next {
+	float: right;
+}
+
+.btn-prev:focus, .btn-next:active {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+#image-gallery .modal-footer {
+	display: block;
+}
+
+#image-gallery #image-gallery-image {
+	width: 100%;
+	height: 500px;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+	#image-gallery #image-gallery-image {
+		width: 100%;
+		height: 350px;
+	}
+}
