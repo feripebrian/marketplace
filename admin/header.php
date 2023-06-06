@@ -1,91 +1,331 @@
-<nav class="navbar navbar-default">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand text-center" href="?page=home"><img src="images/logo-kemenag.png"></a>
-		</div> <!-- /.navbar-header -->
+<!-- Preloader -->
+<div class="preloader flex-column justify-content-center align-items-center">
+	<img class="animation__shake" src="../assets/adminlte/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+</div>
+<!-- Navbar -->
+<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+	<!-- Left navbar links -->
+	<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+		</li>
+	</ul>
 
-		<div class="collapse navbar-collapse" id="#bs-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Master Data <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="?page=m_direktori">Data Direktori</a></li>
-						<li><a href="?page=m_jabatan">Data Jabatan</a></li>
-						<li><a href="?page=m_pegawai">Data Pegawai</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="?page=link_direktori">Link Direktori</a></li>
-						<li><a href="?page=link_zona">Link Zona</a></li>
-						<li><a href="?page=link_maklumat">Link Maklumat</a></li>
-						<li><a href="?page=link_masyarakat">Link Masyarakat</a></li>
-						<li><a href="?page=link_pengaduan">Link Pengaduan</a></li>
-						<li><a href="?page=link_survey">Link Survey</a></li>
-						<li><a href="?page=link_dampak">Link Dampak</a></li>
-						<li><a href="?page=link_inovasi">Link Inovasi</a></li>
-						<li><a href="?page=m_masa_kpl">Masa Kepala Kantor</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="?page=m_struktur_org">Struktur Organisasi</a></li>
-					</ul>
-				</li>
-
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Posting <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="?page=m_berita">Berita</a></li>
-						<li><a href="?page=m_layananpublik">Layanan Publik</a></li>
-						<li><a href="?page=carousel">Carousel</a></li>
-						<li><a href="?page=tugasfungsi">Tugas & Fungsi</a></li>
-						<li><a href="?page=link_surat">Peraturan & Informasi</a></li>
-					</ul>
-				</li>
-
-				<!-- <li><a href="?page=carousel">Carousel</a></li>
-				<li><a href="?page=tugasfungsi">Tugas & Fungsi</a></li> -->
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media Gallery <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="?page=m_medgall_foto">Foto</a></li>
-						<li><a href="?page=m_medgall_video">Video</a></li>
-					</ul>
-				</li>
-
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Zona Integritas<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="?page=m_zona_data">Integritas Data</a></li>
-						<li><a href="?page=m_zona_gambar">Integritas Gambar</a></li>
-						<li><a href="?page=m_zona_video">Integritas Video</a></li>
-					</ul>
-				</li>
-
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Layanan Online<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="?page=link_bimas">Bimas Islam</a></li>
-						<li><a href="?page=link_haji">Penyelenggara Haji & Umroh</a></li>
-						<li><a href="?page=link_pontren">PD Pontren</a></li>
-						<li><a href="?page=link_penmad">Pendidikan Madrasah</a></li>
-					</ul>
-				</li>
-
-				<li><a href="?page=unitkerja">Unit Kerja</a></li>
-			</ul>
-
-			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= $_SESSION['nama_admin']." As ".$_SESSION['level']; ?> <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="?page=ubah_userpass"><i class="fa fa-cog"></i> Ubah Username dan Password</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="cek_login.php?op=out"><i class="fa fa-sign-out"></i> Sign Out</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div> <!-- /.navbar-collapse -->
-	</div> <!-- /.container -->
+	<!-- Right navbar links -->
+	<ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+			<a class="nav-link" data-widget="fullscreen" href="#" role="button">
+				<i class="fas fa-expand-arrows-alt"></i>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+				<i class="fas fa-th-large"></i>
+			</a>
+		</li>
+	</ul>
 </nav>
+<!-- /.navbar -->
+
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+	<!-- Sidebar -->
+	<div class="sidebar">
+		<!-- Sidebar user panel (optional) -->
+		<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+			<div class="image">
+				<img src="../assets/adminlte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+			</div>
+			<div class="info">
+				<a href="#" class="d-block">Alexander Pierce</a>
+			</div>
+		</div>
+		<!-- Sidebar Menu -->
+		<nav class="mt-2">
+
+			<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+				<!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-circle"></i>
+						<p>
+							Master Product
+							<i class="right fas fa-angle-left"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="?page=m_product" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Product</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=m_category" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Category</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=m_price" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Price</p>
+							</a>
+						</li>
+
+
+
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-circle"></i>
+						<p>
+							Master Data
+							<i class="right fas fa-angle-left"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="?page=m_direktori" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Data Direktori</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=m_jabatan" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Data Jabatan</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=m_pegawai" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Data Pegawai</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=link_direktori" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Link Direktori</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=link_zona" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Link Zona</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=link_maklumat" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Link Maklumat</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=link_masyarakat" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Link Masyarakat</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=link_pengaduan" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Link Pengaduan</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=link_survey" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Link Survey</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=link_dampak" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Link Dampak</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=link_inovasi" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Link Inovasi</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=m_masa_kpl" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p> Masa Kepala Kantor</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=m_struktur_org" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Struktur Organisasi</p>
+							</a>
+						</li>
+
+
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-circle"></i>
+						<p>
+							Posting
+							<i class="right fas fa-angle-left"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="?page=m_berita" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Berita</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=m_layananpublik" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Layanan Publik</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=carousel" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Carousel</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=tugasfungsi" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Tugas & Fungsi</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=link_surat" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Peraturan & Informasi</p>
+							</a>
+						</li>
+
+
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-circle"></i>
+						<p>
+							Media Gallery
+							<i class="right fas fa-angle-left"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="?page=m_medgall_foto" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Foto</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=m_medgall_video" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Video</p>
+							</a>
+						</li>
+
+
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-circle"></i>
+						<p>
+							Zona Integritas
+							<i class="right fas fa-angle-left"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="?page=m_zona_data" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Integritas Data</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=m_zona_gambar" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Integritas Gambar </p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=m_zona_video" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Integritas Video</p>
+							</a>
+						</li>
+
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-circle"></i>
+						<p>
+							Layanan Online
+							<i class="right fas fa-angle-left"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="?page=link_bimas" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Bimas Islam</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=link_haji" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Penyelenggara Haji & Umroh</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=link_pontren" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>PD Pontren</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="?page=link_penmad" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Pendidikan Madrasah</p>
+							</a>
+						</li>
+
+
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-circle"></i>
+						<p>
+							Master Data
+							<i class="right fas fa-angle-left"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="?page=unitkerja" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Unit Kerja</p>
+							</a>
+						</li>
+
+
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!-- /.sidebar-menu -->
+	</div>
+	<!-- /.sidebar -->
+</aside>
